@@ -1,0 +1,38 @@
+.quote {
+  background-color: var(--quoteContainer-bg);
+  /* margin-bottom: 10px; */
+  max-width: 700px;
+  margin: 0 auto 10px;
+  padding: 10px 13px 0px 5px;
+  border-radius: 5px;
+  border: 1px rgb(207, 198, 198) solid;
+}
+
+.list {
+  list-style: none;
+  padding: 0 10px;
+  margin-top: 40px;
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
+}
+.sortButtons {
+  display: flex;
+  max-width: 700px;
+  justify-content: flex-end;
+  margin: 0 auto 5px;
+}
+
+.sortButtons button {
+  border: none;
+  background-color: transparent;
+  margin-right: 5px;
+  font-size: 25px;
+  color: var(--header-bg);
+  padding: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 480px) {
+  .list {
+    padding: 0 10%;
+  }
+}

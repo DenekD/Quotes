@@ -1,0 +1,45 @@
+.container {
+  background-color: var(--commentList-bg);
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0 20px 20px;
+  overflow: hidden;
+  height: auto;
+}
+
+.comment {
+  background-color: var(--commentList-comment-bg);
+  color: var(--commentList-comment-color);
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+.btnShowComments {
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font-size: 1rem;
+  padding: 5px;
+  margin: 0 0 10px 20px;
+  cursor: pointer;
+}
+
+.slideEnter {
+  max-height: 0;
+}
+.slideEnterActive {
+  max-height: 500px;
+  transition: max-height 400ms;
+}
+.slideExit {
+  max-height: 500px;
+}
+.slideExitActive {
+  max-height: 0;
+  transition: max-height 400ms;
+}

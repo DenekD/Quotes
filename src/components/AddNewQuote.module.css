@@ -1,0 +1,116 @@
+.container {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.acordeon {
+  border: var(--AddNewQuote-acordeon-btn-border) 2px solid;
+  padding: 10px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.icon i {
+  content: "";
+  border: solid var(--AddNewQuote-font);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  position: absolute;
+  margin-top: 3px;
+  right: 15px;
+  padding: 4px;
+  transform-origin: 7.12px 7.12px;
+  transition: 0.3s ease transform;
+}
+
+.open {
+  transform: rotate(225deg);
+}
+
+.closed {
+  transform: rotate(45deg);
+}
+
+.acordeonContainer {
+  z-index: -10;
+  overflow: hidden;
+}
+.container h2 {
+  margin-top: 40px;
+  margin-left: 0;
+  margin-bottom: 25px;
+  font-size: 20px;
+  overflow: hidden;
+}
+.submit {
+  margin-top: 12px;
+  border: 2px solid var(--AddNewQuote-acordeon-btn-border);
+  color: #597194;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding: 0.9375rem 2.75rem;
+  font-weight: 400;
+  background: none;
+  transition: 0.4s;
+}
+
+.submit:hover {
+  background-color: var(--AddNewQuote-btn-hover-bg);
+  color: var(--AddNewQuote-btn-hover-color);
+}
+
+.form input,
+.form textarea {
+  padding: 5px;
+  width: 95%;
+  border-radius: 5px;
+  border: var(--AddNewQuote-form-border) 2px solid;
+  resize: none;
+  color: var(--AddNewQuote-form-font);
+}
+.form textarea {
+  height: 80px;
+}
+
+form .quote input {
+  padding: 15px 10px;
+  line-height: 140%;
+}
+.error {
+  color: red;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+.autor label,
+.quote label {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.invalid {
+  background-color: rgb(233, 201, 201);
+  border: red solid 3px;
+  border-radius: 5px;
+}
+
+/* CSSTransition classes */
+
+.slideEnter {
+  max-height: 0;
+}
+.slideEnterActive {
+  max-height: 390px;
+  transition: max-height 500ms;
+}
+.slideExit {
+  max-height: 390px;
+}
+.slideExitActive {
+  max-height: 0;
+  transition: max-height 500ms;
+}

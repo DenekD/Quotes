@@ -1,0 +1,94 @@
+/* to do list
+- modal dopracuj tekst
+- login komponent jak w redicie 
+- media queries i responsywonsoc  
+   - login szerokosc formularza
+
+git remote add origin https://github.com/DenekD/Quotes.git
+git branch -M main
+git push -u origin main
+
++ notifications na edycja i remove comment 
++ hover effect na navbar icons
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  --main-bg: var(--color2);
+  --header-bg: var(--color1);
+  --header-font: var(--color3);
+  --header-font-hover: var(--color2);
+  --header-font-active: #fff;
+  --quoteContainer-bg: rgb(241, 234, 234);
+  --quoteWhoAddComment-font: white;
+  --quote--voteUp-color: green;
+  --quote--voteDown-color: red;
+  --quote--voteDisabled-color: grey;
+  --quote--deleteBtn-color: var(--color2);
+  --blogquote-bg: #eee2de;
+  --blogquote-font: #555555;
+  --blogquoteAutor-font: #333;
+  --blogquote--sign-color: #78c0a8;
+  --authPage-btn-hover: #52b788;
+  --authPage-spanSignUp: #3d405b;
+  --authPage-spanSignUp-hover: var(--color3);
+  --authPage-input-border: var(--color1);
+  --hamburger-font: var(--color3);
+  --burgerMenu-bg: var(--color3);
+  --burgerMenu-font: var(--color1);
+  --burgerMenu-border-color: var(--color1);
+  --burgerMenu-a-color: var(--color1);
+  --burgerMenu-activeLink-bg: var(--color1);
+  --burgerMenu-activeLink-color: var(--color3);
+  --AddNewQuote-bg: #eee2de;
+  --AddNewQuote-font: var(--color1);
+  --AddNewQuote-input-font: var(--color1);
+  --AddNewQuote-acordeon-btn-border: var(--color1);
+  --AddNewQuote-form-border: var(--color1);
+  --AddNewQuote-form-font: var(--color1);
+  --AddNewQuote-btn-hover-bg: #78c0a8;
+  --AddNewQuote-btn-hover-color: #fff;
+  --commentList-bg: #eee2de;
+  --commentList-comment-bg: #fff;
+  --commentList-comment-color: var(--color1);
+  --comment-header-bg: rgb(247, 240, 240);
+  --comment-mainComment-color: rgb(95, 89, 89);
+  --comment-btn-bg: var(--color3);
+  --addNewComment-form-textera-color: var(--color1);
+  --addNewComment-btn-bg: var(--color3);
+  --commentEditForm-btn-bg: var(--color3);
+  --commentEditForm-btn-color: var(--color1);
+  --profileForm-form-border: var(--color1);
+  --profileForm-form-color: var(--color1);
+  --profileForm-btn-border: var(--color1);
+  --profileForm-btn-border: var(--color1);
+  --profileForm-btn-bg-hover: #78c0a8;
+  --profileForm-btn-color-hover: #fff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Roboto:wght@400;700&display=swap");
+
+.container {
+  background-color: var(--main-bg);
+  min-height: calc(100vh - 160px);
+  top: 0;
+  left: 0;
+  padding: 5rem 0;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #006d77;
+}
+
+.darkMode {
+  --color1: #191923;
+  --color2: #201d16;
+  --color3: #545c6f;
+  --color4: #1c1b19;
+}
+.lightMode {
+  --color1: #006d77;
+  --color2: #83c5be;
+  --color3: #ffddd2;
+}

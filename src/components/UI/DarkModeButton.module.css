@@ -1,0 +1,51 @@
+.Button {
+  background-color: var(--color1);
+  padding: 4px;
+  border-radius: 30px;
+  position: relative;
+  width: 57px;
+  font-size: 17px;
+  color: #d28f22;
+  border: none;
+  margin-top: auto;
+  margin-bottom: 100px;
+  align-self: center;
+}
+
+/* ::after - switching ball covering icons */
+.Button::after {
+  content: "";
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background-color: var(--burgerMenu-bg);
+  position: absolute;
+  top: 2.5px;
+  transition: 0.2s ease-out left;
+}
+.Button.light::after {
+  left: 2px;
+}
+.Button.dark::after {
+  left: 32px;
+}
+
+.Button i {
+  position: relative;
+  top: 1px;
+  transition: 0.3s ease-out opacity;
+}
+
+.Button i:nth-of-type(1) {
+  left: -6px;
+}
+.Button i:nth-of-type(2) {
+  left: 6px;
+}
+
+.Button.light i:nth-of-type(1) {
+  opacity: 0;
+}
+.Button.dark i:nth-of-type(2) {
+  opacity: 0;
+}

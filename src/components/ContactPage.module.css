@@ -1,0 +1,23 @@
+.list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  height: 400px;
+}
+
+.list li i {
+  font-size: 50px;
+  text-decoration: none;
+  color: inherit;
+}
+.list a:nth-of-type(1) {
+  color: #333;
+}
+.list a:nth-of-type(2) {
+  color: #3b5998;
+}
+.list a:nth-of-type(3) {
+  color: #0077b5;
+}

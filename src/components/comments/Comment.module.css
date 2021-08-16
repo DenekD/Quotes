@@ -1,0 +1,50 @@
+.commentHeader {
+  display: flex;
+  align-items: center;
+  border-bottom: rgb(196, 180, 180) 2px solid;
+  background-color: var(--comment-header-bg);
+  border-radius: 3px 3px 0 0;
+}
+
+.commentHeader p {
+  margin: 0;
+  padding: 10px;
+}
+
+.commentHeader p:nth-child(2) {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.mainComment {
+  color: var(--comment-mainComment-color);
+}
+
+.mainComment p {
+  margin-left: 10px;
+  padding: 15px 0;
+}
+
+.btn {
+  padding: 4px 10px;
+  margin: 0 0 5px 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--comment-btn-bg);
+  color: var(--header-bg);
+}
+
+.slideEnter {
+  max-height: 0;
+}
+.slideEnterActive {
+  max-height: 500px;
+  transition: max-height 500ms;
+}
+.slideExit {
+  max-height: 500px;
+}
+.slideExitActive {
+  max-height: 0;
+  transition: max-height 500ms;
+}
