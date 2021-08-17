@@ -1,13 +1,13 @@
 # Quotes
 
-run aplication -> https://denekd.github.io/Quotes
+run application -> https://denekd.github.io/Quotes
 
 aplikacja Quotes pokazuje cytaty uzytkowników oraz komentaze do poszczegołnych cytatów
 
 stack technologiczny:
 React, Redux toolkit, React Router, React Form hook, react transition group, 
 
-## Aplications features: 
+## Applications features: 
 - aplikacja wykorzystuje firebase jako baze danych do przechowywania cytatów, komentarzy oraz do authentication,
 - aplikacja posiada system rejestracji nowych uzytkowników i logowania istniejących
 - można dodawać nowe cytaty i komentarze oraz do głosować na cytaty,
