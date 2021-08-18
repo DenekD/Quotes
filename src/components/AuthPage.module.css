@@ -4,6 +4,10 @@
   text-align: center;
   /* height: calc(100vh - 180px); */
 }
+.header {
+  color: var(--authPage-font-color);
+}
+
 .header h1 {
   margin-top: 20px;
   font-size: 25px;
@@ -16,6 +20,9 @@
 .header div span {
   color: var(--authPage-spanSignUp);
   cursor: pointer;
+}
+.header div span:hover {
+  color: var(--authPage-spanSignUp-hover);
 }
 
 .submit {
@@ -66,6 +73,7 @@
   display: block;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  color: var(--authPage-font-color);
 }
 
 .invalid {

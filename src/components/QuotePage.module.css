@@ -12,7 +12,7 @@
   font-style: italic;
   color: var(--blogquote-font);
   padding: 1.2em 30px 1.2em 75px;
-  border-left: 8px solid #78c0a8;
+  border-left: 8px solid var(--blogquote--sign-color);
   line-height: 1.5;
   position: relative;
   background: repeating-linear-gradient(
@@ -27,7 +27,7 @@
 .otroBlockquote::before {
   font-family: Arial;
   content: "\201C";
-  color: #78c0a8;
+  color: var(--blogquote--sign-color);
   font-size: 4em;
   position: absolute;
   left: 10px;

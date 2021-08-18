@@ -12,10 +12,11 @@
   margin: 0;
   padding: 0;
 
-  --main-bg: var(--color2);
+  --main-bg: var(--color3);
   --header-bg: var(--color1);
   --header-font: var(--color3);
-  --header-font-hover: var(--color2);
+  --header-font-hover: var(--color4);
+  --header-font-Quote: var(--color5);
   --header-font-active: #fff;
   --quoteContainer-bg: rgb(241, 234, 234);
   --quoteWhoAddComment-font: white;
@@ -26,10 +27,11 @@
   --blogquote-bg: #eee2de;
   --blogquote-font: #555555;
   --blogquoteAutor-font: #333;
-  --blogquote--sign-color: #78c0a8;
+  --blogquote--sign-color: var(--color2);
+  --authPage-font-color: var(--color2);
   --authPage-btn-hover: #52b788;
-  --authPage-spanSignUp: #3d405b;
-  --authPage-spanSignUp-hover: var(--color3);
+  --authPage-spanSignUp: var(--color1);
+  --authPage-spanSignUp-hover: var(--color2);
   --authPage-input-border: var(--color1);
   --hamburger-font: var(--color3);
   --burgerMenu-bg: var(--color3);
@@ -47,6 +49,7 @@
   --AddNewQuote-btn-hover-bg: #78c0a8;
   --AddNewQuote-btn-hover-color: #fff;
   --commentList-bg: #eee2de;
+  --commentList-font-color: var(--color-1);
   --commentList-comment-bg: #fff;
   --commentList-comment-color: var(--color1);
   --comment-header-bg: rgb(247, 240, 240);
@@ -74,7 +77,7 @@
   padding: 5rem 0;
   width: 100%;
   font-family: "Roboto", sans-serif;
-  color: #006d77;
+  color: var(--color2);
 }
 
 .darkMode {
@@ -84,7 +87,9 @@
   --color4: #1c1b19;
 }
 .lightMode {
-  --color1: #006d77;
-  --color2: #83c5be;
-  --color3: #ffddd2;
+  --color1: #1d3557;
+  --color2: #457b9d;
+  --color3: #f1faee;
+  --color4: #a8dadc;
+  --color5: #e63946;
 }

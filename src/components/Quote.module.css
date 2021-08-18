@@ -20,12 +20,10 @@
 
 .quoteFooter {
   display: flex;
-  /* justify-content: space-between; */
   width: 100%;
   padding: 8px 8px;
   align-items: center;
-  color: var(--quoteWhoAddComment-font);
-  color: black;
+  color: var(--quote--deleteBtn-color);
 }
 .deleteBtn {
   border: none;
@@ -33,7 +31,6 @@
   cursor: pointer;
   color: var(--quote--deleteBtn-color);
   flex: 2;
-  /* margin-right: 40px; */
 }
 .deleteBtn p {
   display: none;
@@ -94,7 +91,7 @@
   text-decoration: none;
   cursor: pointer;
   padding: 7px;
-  color: cadetblue;
+  color: var(--quote--deleteBtn-color);
   display: flex;
   align-items: center;
 }
@@ -111,7 +108,7 @@
   font-style: italic;
   color: var(--blogquote-font);
   padding: 1.2em 30px 1.2em 75px;
-  border-left: 8px solid #78c0a8;
+  border-left: 8px solid var(--blogquote--sign-color);
   border-radius: 5px;
   line-height: 1.5;
   position: relative;

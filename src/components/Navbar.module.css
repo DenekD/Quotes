@@ -16,6 +16,11 @@
   margin-left: 20px;
   margin-top: 0;
 }
+
+.burgerAndTitle h1::first-letter {
+  color: var(--header-font-Quote);
+}
+
 .burgerAndTitle {
   display: flex;
   align-items: center;
