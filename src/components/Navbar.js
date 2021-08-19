@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 
 import AuthContext from "../context/auth-context";
 import Hamburger from "./UI/Hamburger";
+import UserImage from "./UI/UserImage";
 
 import classes from "./Navbar.module.css";
 // import { useDispatch } from "react-redux";
@@ -13,8 +14,6 @@ const Navbar = () => {
   const authCtx = useContext(AuthContext);
   const isLoggedIn = authCtx.isLoggedIn;
   const dispatch = useDispatch();
-
-  // const dispatch = useDispatch();
 
   const logoutHandler = () => {
     authCtx.logout();
@@ -32,9 +31,6 @@ const Navbar = () => {
     }, 4000);
   };
 
-  // const themeToggleHandler = () => {
-  //   dispatch(uiActions.toggleDarkMode());
-  // };
   return (
     <header className={classes.header}>
       <div className={classes.burgerAndTitle}>
@@ -46,6 +42,9 @@ const Navbar = () => {
       </div>
       <nav>
         <ul className={classes.nav}>
+          <li>
+            <UserImage />
+          </li>
           {!isLoggedIn && (
             <li>
               <Link to="/login">
@@ -53,11 +52,6 @@ const Navbar = () => {
               </Link>
             </li>
           )}
-          {/* {isLoggedIn && (
-            <li>
-              <p>witaj {authCtx.userName}</p>
-            </li>
-          )} */}
           {isLoggedIn && (
             <li className={classes.cog}>
               <Link to="/profile">

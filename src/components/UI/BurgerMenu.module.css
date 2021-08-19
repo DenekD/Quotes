@@ -21,7 +21,11 @@
 .menu li {
   padding: 10px 25px;
 }
-.menu a {
+.menu span {
+  display: inline;
+}
+.menu a,
+.manu span {
   text-decoration: none;
   color: var(--burgerMenu-a-color);
   cursor: pointer;

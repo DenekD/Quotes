@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+}
+
+.image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  background-color: #b3bbbe;
+  color: white;
+  font-size: 25px;
+}
+
+.spot {
+  width: 10px;
+  height: 10px;
+  background-color: #46d161;
+  position: absolute;
+  border-radius: 50%;
+  left: 20px;
+  bottom: -2px;
+}

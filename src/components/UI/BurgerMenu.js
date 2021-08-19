@@ -24,6 +24,24 @@ const BurgerMenu = (props) => {
     dispatch(uiActions.toggleBurgerMenu());
   };
 
+  const logoutHandler = () => {
+    dispatch(uiActions.toggleBurgerMenu());
+
+    authCtx.logout();
+    //notification
+    dispatch(
+      uiActions.openNotification({
+        isNotificationOpen: true,
+        title: "logout succesful",
+        message: "wylogowałeś się poprawnie",
+        status: "success",
+      })
+    );
+    setTimeout(() => {
+      dispatch(uiActions.closeNotification());
+    }, 4000);
+  };
+
   return (
     <Fragment>
       <CSSTransition
@@ -58,6 +76,11 @@ const BurgerMenu = (props) => {
               <NavLink exact activeClassName={classes.activeLink} to="/profile">
                 <li onClick={clickHandler}>twój profil</li>
               </NavLink>
+            )}
+            {isLoggedIn && (
+              <span>
+                <li onClick={logoutHandler}>wyloguj</li>
+              </span>
             )}
             <NavLink exact activeClassName={classes.activeLink} to="/contact">
               <li onClick={clickHandler}>About me</li>
