@@ -25,7 +25,7 @@
   display: inline;
 }
 .menu a,
-.manu span {
+.menu span {
   text-decoration: none;
   color: var(--burgerMenu-a-color);
   cursor: pointer;

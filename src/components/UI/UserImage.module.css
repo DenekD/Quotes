@@ -1,5 +1,9 @@
 .container {
   position: relative;
+  display: flex;
+  align-items: center;
+  /* border: 2px #fff solid;
+  padding: 5px; */
 }
 
 .image {
@@ -13,6 +17,7 @@
   background-color: #b3bbbe;
   color: white;
   font-size: 25px;
+  margin-right: 10px;
 }
 
 .spot {
@@ -23,4 +28,13 @@
   border-radius: 50%;
   left: 20px;
   bottom: -2px;
+}
+.container p {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .container p {
+    display: block;
+  }
 }

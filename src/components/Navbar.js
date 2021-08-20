@@ -52,13 +52,13 @@ const Navbar = () => {
               </Link>
             </li>
           )}
-          {isLoggedIn && (
+          {/* {isLoggedIn && (
             <li className={classes.cog}>
               <Link to="/profile">
                 <i class="fas fa-cog"></i>
               </Link>
             </li>
-          )}
+          )} */}
           {isLoggedIn && (
             <li>
               <p onClick={logoutHandler}>Logout</p>
