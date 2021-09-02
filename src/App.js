@@ -13,6 +13,7 @@ import LoadingSpinner from "./components/UI/LoadingSpinner";
 import QuotePage from "./components/QuotePage";
 import ContactPage from "./components/ContactPage";
 import Notification from "./components/UI/Notification";
+import Footer from "./components/Footer/Footer";
 
 import { useEffect, useContext } from "react";
 import { useSelector, useDispatch } from "react-redux";
@@ -94,6 +95,7 @@ function App() {
               <Redirect to="/" />
             </Route>
           </Switch>
+          <Footer />
         </div>
       </Suspense>
     </div>

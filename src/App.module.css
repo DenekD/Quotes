@@ -1,10 +1,13 @@
 /* to do list
-- modal dopracuj tekst
-- login komponent jak w redicie 
 - w menu bar logout 
+- ascending przesyłane przez params
 
+
++ login komponent
 + notifications na edycja i remove comment 
 + hover effect na navbar icons
++ footer sticky
+
 
  */
 
@@ -18,7 +21,7 @@
   --header-font-hover: var(--color4);
   --header-font-Quote: var(--color5);
   --header-font-active: #fff;
-  --quoteContainer-bg: rgb(241, 234, 234);
+  --quoteContainer-bg: var(--color6);
   --quoteWhoAddComment-font: white;
   --quote--voteUp-color: green;
   --quote--voteDown-color: red;
@@ -36,6 +39,7 @@
   --hamburger-font: var(--color3);
   --burgerMenu-bg: var(--color3);
   --burgerMenu-font: var(--color1);
+  --burgerMenu-font-hover: var(--color2);
   --burgerMenu-border-color: var(--color1);
   --burgerMenu-a-color: var(--color1);
   --burgerMenu-activeLink-bg: var(--color1);
@@ -72,6 +76,7 @@
 .container {
   background-color: var(--main-bg);
   min-height: calc(100vh - 160px);
+  position: relative;
   top: 0;
   left: 0;
   padding: 5rem 0;
@@ -81,10 +86,12 @@
 }
 
 .darkMode {
-  --color1: #191923;
-  --color2: #201d16;
-  --color3: #545c6f;
+  --color1: #545c6f;
+  --color2: #f1faee;
+  --color3: #1c1b19;
   --color4: #1c1b19;
+  --color5: #e63946;
+  --color6: ;
 }
 .lightMode {
   --color1: #1d3557;
@@ -92,4 +99,5 @@
   --color3: #f1faee;
   --color4: #a8dadc;
   --color5: #e63946;
+  --color6: rgb(241, 234, 234);
 }

@@ -21,6 +21,9 @@
 .menu li {
   padding: 10px 25px;
 }
+.menu li:hover {
+  color: var(--burgerMenu-font-hover);
+}
 .menu span {
   display: inline;
 }
@@ -32,7 +35,7 @@
   border-bottom: var(--burgerMenu-border-color) 2px solid;
 }
 .whoIsLogged {
-  padding: 15px;
+  padding: 15px 15px 15px 25px;
   line-height: 1.4;
   background-color: var(--header-bg);
   color: var(--header-font-active);
@@ -44,11 +47,9 @@
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.55);
   z-index: 12;
-  width: 100%;
-  height: 100%;
   top: 80px;
   left: 0;
   right: 0;
@@ -65,7 +66,6 @@
   color: var(--burgerMenu-activeLink-color);
   background-color: var(--burgerMenu-activeLink-bg);
   border-radius: 5px;
-  /* box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); */
 }
 
 /* React Transistion group - css transition - burger menu slide */

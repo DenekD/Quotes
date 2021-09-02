@@ -1,0 +1,25 @@
+.footer {
+  background-color: var(--header-bg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: start;
+  color: var(--header-font);
+}
+
+.footer a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: inherit;
+}
+.footer a:hover {
+  color: var(--color5);
+}
+
+.footer a .active {
+  color: var(--color5);
+  background-color: aquamarine;
+}

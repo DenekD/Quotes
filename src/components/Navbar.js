@@ -7,7 +7,6 @@ import Hamburger from "./UI/Hamburger";
 import UserImage from "./UI/UserImage";
 
 import classes from "./Navbar.module.css";
-// import { useDispatch } from "react-redux";
 import { uiActions } from "../store/ui-slice";
 
 const Navbar = () => {
@@ -52,13 +51,6 @@ const Navbar = () => {
               </Link>
             </li>
           )}
-          {/* {isLoggedIn && (
-            <li className={classes.cog}>
-              <Link to="/profile">
-                <i class="fas fa-cog"></i>
-              </Link>
-            </li>
-          )} */}
           {isLoggedIn && (
             <li>
               <p onClick={logoutHandler}>Logout</p>
