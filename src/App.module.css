@@ -1,16 +1,3 @@
-/* to do list
-- w menu bar logout 
-- ascending przesyłane przez params
-
-
-+ login komponent
-+ notifications na edycja i remove comment 
-+ hover effect na navbar icons
-+ footer sticky
-
-
- */
-
 * {
   margin: 0;
   padding: 0;
@@ -79,6 +66,8 @@
   position: relative;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   padding: 5rem 0;
   width: 100%;
   font-family: "Roboto", sans-serif;
