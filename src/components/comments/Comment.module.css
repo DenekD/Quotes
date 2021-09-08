@@ -1,6 +1,7 @@
 .commentHeader {
   display: flex;
   align-items: center;
+  padding: 10px;
   border-bottom: rgb(196, 180, 180) 2px solid;
   background-color: var(--comment-header-bg);
   border-radius: 3px 3px 0 0;
@@ -8,12 +9,13 @@
 
 .commentHeader p {
   margin: 0;
-  padding: 10px;
+  /* margin-right: 10px; */
 }
 
 .commentHeader p:nth-child(2) {
   color: gray;
   font-size: 0.8rem;
+  margin-right: 10px;
 }
 
 .mainComment {

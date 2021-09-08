@@ -1,13 +1,17 @@
 import { useDispatch } from "react-redux";
 import { useContext, useState } from "react";
+import { Fragment } from "react";
+
 import CommentEditForm from "./CommentEditForm";
+import UserImage from "../UI/UserImage";
+
 import { CSSTransition } from "react-transition-group";
 
-import { quotesActions } from "../../store/quote-slice";
-import classes from "./Comment.module.css";
-import AuthContext from "../../context/auth-context";
-import { Fragment } from "react";
 import { uiActions } from "../../store/ui-slice";
+import { quotesActions } from "../../store/quote-slice";
+import AuthContext from "../../context/auth-context";
+
+import classes from "./Comment.module.css";
 
 const Comment = (props) => {
   const dispatch = useDispatch();
@@ -60,6 +64,7 @@ const Comment = (props) => {
   return (
     <Fragment>
       <div className={classes.commentHeader}>
+        <UserImage />
         <p>{props.userName}</p>
         <p> {props.date}</p>
       </div>
