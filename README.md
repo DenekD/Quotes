@@ -31,6 +31,7 @@ React, Redux toolkit, React Router, React Form hook, react transition group,
 - React Context - authentication, 
 
 ## UI features:
+- css modules
 - powiadomienia które informują użytkownika o prawidłowych lub nie operacjach na bazie danych,
 - dark i light mode,
 - ikonki z Font Awesome,
