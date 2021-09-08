@@ -67,7 +67,7 @@ const Quote = (props) => {
         </div>
         <Link to={`quote/${quote.id}`}>
           <blockquote className={classes.otroBlockquote}>
-            cytat: {quote.text}
+            {quote.text}
             <span>{quote.author}</span>
           </blockquote>
         </Link>

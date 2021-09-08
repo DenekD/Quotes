@@ -27,7 +27,7 @@ const QuotePage = () => {
     <Fragment>
       <div className={classes.mainQuote}>
         <blockquote className={classes.otroBlockquote}>
-          cytat: {selectedQuote.text}
+          {selectedQuote.text}
           <span>{selectedQuote.author}</span>
         </blockquote>
 
