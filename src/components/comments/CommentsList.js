@@ -4,8 +4,10 @@ import { CSSTransition } from "react-transition-group";
 
 import Comment from "./Comment";
 import AddComment from "./AddComment";
-import classes from "./CommentList.module.css";
+
 import AuthContext from "../../context/auth-context";
+
+import classes from "./CommentList.module.css";
 
 const CommnetsLists = (props) => {
   const [isCommentsOpen, setCommentsOpen] = useState(true);

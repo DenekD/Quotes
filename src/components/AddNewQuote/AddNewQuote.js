@@ -6,9 +6,9 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-import AuthContext from "../context/auth-context";
-import { quotesActions } from "../store/quote-slice";
-import { uiActions } from "../store/ui-slice";
+import AuthContext from "../../context/auth-context";
+import { quotesActions } from "../../store/quote-slice";
+import { uiActions } from "../../store/ui-slice";
 
 import classes from "./AddNewQuote.module.css";
 

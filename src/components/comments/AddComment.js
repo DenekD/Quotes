@@ -1,13 +1,14 @@
 import { useContext } from "react";
 import { useDispatch } from "react-redux";
-import AuthContext from "../../context/auth-context";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-import classes from "./AddComment.module.css";
 
+import AuthContext from "../../context/auth-context";
 import { quotesActions } from "../../store/quote-slice";
 import { uiActions } from "../../store/ui-slice";
+
+import * as yup from "yup";
+import classes from "./AddComment.module.css";
 
 const schema = yup.object().shape({
   comment: yup
@@ -18,7 +19,6 @@ const schema = yup.object().shape({
 });
 
 const AddComment = (props) => {
-  // const commentTextRef = useRef();
   const dispatch = useDispatch();
   const authCtx = useContext(AuthContext);
 

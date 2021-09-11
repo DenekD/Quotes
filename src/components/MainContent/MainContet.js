@@ -1,9 +1,11 @@
 import React from "react";
 import { Fragment } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import Quote from "./Quote";
-import LoadingSpinner from "./UI/LoadingSpinner";
-import { quotesActions } from "../store/quote-slice";
+
+import LoadingSpinner from "../UI/LoadingSpinner";
+import Quote from "../Quote/Quote";
+
+import { quotesActions } from "../../store/quote-slice";
 
 import classes from "./MainContent.module.css";
 

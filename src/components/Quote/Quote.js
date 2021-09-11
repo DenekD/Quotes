@@ -3,10 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 
-import AuthContext from "../context/auth-context";
+import AuthContext from "../../context/auth-context";
 
-import { quotesActions } from "../store/quote-slice";
-import { uiActions } from "../store/ui-slice";
+import { quotesActions } from "../../store/quote-slice";
+import { uiActions } from "../../store/ui-slice";
 
 const Quote = (props) => {
   const dispatch = useDispatch();
@@ -46,6 +46,7 @@ const Quote = (props) => {
   };
 
   const canNotVoteHandler = () => {
+    //notification
     dispatch(
       uiActions.openNotification({
         isNotificationOpen: true,

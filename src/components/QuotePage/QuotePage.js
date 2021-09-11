@@ -1,9 +1,9 @@
 import { Fragment, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
-import { fetchComments } from "../store/comments-actions";
+import { fetchComments } from "../../store/comments-actions";
 
-import CommentsList from "./comments/CommentsList";
+import CommentsList from "../comments/CommentsList";
 // import LoadingSpinner from "./UI/LoadingSpinner";
 import classes from "./QuotePage.module.css";
 

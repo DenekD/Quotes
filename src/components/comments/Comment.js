@@ -64,7 +64,7 @@ const Comment = (props) => {
   return (
     <Fragment>
       <div className={classes.commentHeader}>
-        <UserImage />
+        <UserImage displaySpot={false} />
         <p>{props.userName}</p>
         <p> {props.date}</p>
       </div>

@@ -1,17 +1,15 @@
-// import "./App.css";
-
 import React, { Suspense } from "react";
 
-import Navbar from "./components/Navbar";
-import MainContent from "./components/MainContet";
-import AddNewQuote from "./components/AddNewQuote";
-import AuthPage from "./components/AuthPage";
+import Navbar from "./components/Navbar/Navbar";
+import MainContent from "./components/MainContent/MainContet";
+import AddNewQuote from "./components/AddNewQuote/AddNewQuote";
+import AuthPage from "./components/AuthPage/AuthPage";
 import UserProfile from "./components/Profile/UserProfile";
 import BurgerMenu from "./components/UI/BurgerMenu";
 import Modal from "./components/UI/Modal";
 import LoadingSpinner from "./components/UI/LoadingSpinner";
-import QuotePage from "./components/QuotePage";
-import ContactPage from "./components/ContactPage";
+import QuotePage from "./components/QuotePage/QuotePage";
+import ContactPage from "./components/Contact/ContactPage";
 import Notification from "./components/UI/Notification";
 import Footer from "./components/Footer/Footer";
 
@@ -55,9 +53,6 @@ function App() {
   useEffect(() => {
     dispatch(fetchQuotes());
   }, [dispatch]);
-
-  // const classes =
-  // <div  className={`${styles.class1} ${!isValid && styles.class2}`}></div>
 
   return (
     <div className={` ${isDarkMode ? classes.darkMode : classes.lightMode}`}>

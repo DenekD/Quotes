@@ -4,9 +4,10 @@ import AuthContext from "../../context/auth-context";
 import classes from "./UserImage.module.css";
 import { Link } from "react-router-dom";
 
-const UserImage = () => {
+const UserImage = ({ displaySpot }) => {
   const authCtx = useContext(AuthContext);
   const isLoggedIn = authCtx.isLoggedIn;
+
   return (
     <Fragment>
       <Link to="/profile">
@@ -14,8 +15,7 @@ const UserImage = () => {
           <div className={classes.image}>
             <i class="fas fa-user"></i>
           </div>
-          {isLoggedIn && <span className={classes.spot}></span>}
-          <p>{authCtx.userEmail}</p>
+          {displaySpot && isLoggedIn && <span className={classes.spot}></span>}
         </div>
       </Link>
     </Fragment>

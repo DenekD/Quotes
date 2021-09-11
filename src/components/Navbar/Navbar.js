@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
-import AuthContext from "../context/auth-context";
-import Hamburger from "./UI/Hamburger";
-import UserImage from "./UI/UserImage";
+import AuthContext from "../../context/auth-context";
+import Hamburger from "../UI/Hamburger";
+import UserImage from "../UI/UserImage";
 
 import classes from "./Navbar.module.css";
-import { uiActions } from "../store/ui-slice";
+import { uiActions } from "../../store/ui-slice";
 
 const Navbar = () => {
   const authCtx = useContext(AuthContext);
@@ -30,6 +30,8 @@ const Navbar = () => {
     }, 4000);
   };
 
+  console.log(authCtx.userEmail);
+
   return (
     <header className={classes.header}>
       <div className={classes.burgerAndTitle}>
@@ -42,8 +44,13 @@ const Navbar = () => {
       <nav>
         <ul className={classes.nav}>
           <li>
-            <UserImage />
+            <UserImage displaySpot={true} />
           </li>
+          {isLoggedIn && (
+            <li>
+              <p> {authCtx.userEmail}</p>
+            </li>
+          )}
           {!isLoggedIn && (
             <li>
               <Link to="/login">

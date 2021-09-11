@@ -13,8 +13,6 @@ const schema = yup.object().shape({
 });
 
 const CommentEditForm = (props) => {
-  // const commentTextRef = useRef();
-
   const {
     register,
     handleSubmit,
@@ -23,8 +21,6 @@ const CommentEditForm = (props) => {
   } = useForm({ resolver: yupResolver(schema) });
 
   const submitHandler = (data) => {
-    // event.preventDefault();
-    // const editedText = commentTextRef.current.value;
     const editedText = data.comment;
     props.editForm(editedText);
     reset();

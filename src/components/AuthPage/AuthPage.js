@@ -6,12 +6,12 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-import { uiActions } from "../store/ui-slice";
+import { uiActions } from "../../store/ui-slice";
 
 import classes from "./AuthPage.module.css";
 
 // import classes from "./AuthForm.module.css";
-import AuthContext from "../context/auth-context";
+import AuthContext from "../../context/auth-context";
 
 const schema = yup.object().shape({
   email: yup.string().email().required(),
