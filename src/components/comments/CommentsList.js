@@ -44,7 +44,7 @@ const CommnetsLists = (props) => {
         {authCtx.isLoggedIn && <AddComment id={props.id} />}
 
         <button onClick={clickHandler} className={classes.btnShowComments}>
-          {isCommentsOpen ? "zwiń komentarze" : "pokarz komentarze"}
+          {isCommentsOpen ? "zwiń komentarze" : "pokaż komentarze"}
         </button>
         <CSSTransition
           in={isCommentsOpen}
