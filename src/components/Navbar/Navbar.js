@@ -30,8 +30,6 @@ const Navbar = () => {
     }, 4000);
   };
 
-  console.log(authCtx.userEmail);
-
   return (
     <header className={classes.header}>
       <div className={classes.burgerAndTitle}>

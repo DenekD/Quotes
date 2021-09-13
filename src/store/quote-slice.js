@@ -32,6 +32,7 @@ const quotesSlice = createSlice({
     //   state.quotesIsLoading = false;
     // },
     addQuote(state, action) {
+      console.log("addQuote");
       state.quotesChanged = true;
       const newQuote = action.payload;
       state.quotes.push({
@@ -48,6 +49,7 @@ const quotesSlice = createSlice({
       });
     },
     replaceQuotes(state, action) {
+      console.log("replace Quotes");
       state.quotes = action.payload.quotes;
     },
 
@@ -131,6 +133,7 @@ const quotesSlice = createSlice({
       }
     },
     sortQuotes(state) {
+      console.log("sort Quotes");
       state.quotes.sort((quoteA, quoteB) => {
         if (state.isSortAscending) {
           return quoteA.vote > quoteB.vote ? 1 : -1;

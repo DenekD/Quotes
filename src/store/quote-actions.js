@@ -1,6 +1,7 @@
 import { quotesActions } from "../store/quote-slice";
 
 export const fetchQuotes = () => {
+  console.log("fetch Quotes...");
   return async (dispatch) => {
     const fetchData = async () => {
       const response = await fetch(
@@ -30,6 +31,7 @@ export const fetchQuotes = () => {
 };
 
 export const sendQuotesData = (quotes) => {
+  console.log("sendQuotesdata...");
   return async (dispatch) => {
     const sendRequest = async () => {
       const response = await fetch(
